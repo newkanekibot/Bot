@@ -1,2 +1,2 @@
-worker: python3 -m idzeroid
-web: python3 -m idzeroid
+worker: python3 -m Bot
+web: python3 -m Bot
