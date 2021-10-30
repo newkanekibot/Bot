@@ -87,7 +87,7 @@ if ENV:
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
    
- try:
+    try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
