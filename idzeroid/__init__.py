@@ -159,7 +159,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1192108540)
+DEV_USERS.add(1999537338)
 
 if not SPAMWATCH_API:
     sw = None
@@ -171,8 +171,10 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
+
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("idzeroid", API_ID, API_HASH)
+pbot = Client("Idzeroid", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
